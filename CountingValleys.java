@@ -6,8 +6,8 @@ class CountingValleys {
         // DDUUDDUDUUUD 12    ---->     Expected Output: 2
         // DUDDDUUDUU 10      ---->     Expected Output: 2
         
-        String s = "DDDUUDUUUDDUU";
-        char[] arrayOfSteps = s.toCharArray();
+        String s = "UDDDUDUU";
+        char[] arrayOfSteps = s.toUpperCase().toCharArray();
         int level = 0;
         int numOfVall = 0;
 
@@ -28,7 +28,7 @@ class CountingValleys {
         }
 
         if(level !=0) {
-        System.out.println("You're not at sea level yet, keep going!");
+            System.out.println("You're not at sea level yet, keep going!");
         }
         System.out.print(numOfVall);
     }
