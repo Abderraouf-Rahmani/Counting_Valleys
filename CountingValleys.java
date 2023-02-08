@@ -18,14 +18,15 @@ class CountingValleys {
        
         for(int i = 0; i < s.length();  i++){
             if(arrayOfSteps[i] == 'D'){
-            level--;
-        }else if(arrayOfSteps[i] == 'U'){
-            level++;
+                level--;
+            }else if(arrayOfSteps[i] == 'U'){
+                level++;
+            }
+            if(level == 0 && arrayOfSteps[i] == 'U'){
+                numOfVall++;
+            }
         }
-        if(level == 0 && arrayOfSteps[i] == 'U'){
-            numOfVall++;
-        }
-        }
+
         if(level !=0) {
         System.out.println("You're not at sea level yet, keep going!");
         }
